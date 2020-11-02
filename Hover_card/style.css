@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  perspective: 1000px;
+  background-color: #000000cc;
+}
+
+.container {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  transform-style: preserve-3d;
+  min-height: 75vh;
+  width: 25rem;
+  border-radius: 30px;
+  background-color: #ffffffec;
+  padding: 0 2rem;
+  box-shadow: 10px 10px 10px rgba(245, 106, 184, 0.3),
+    5px 5px 10px rgba(17, 184, 226, 0.3);
+}
+
+.jersey {
+  min-height: 35vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.jersey-img {
+  width: 11rem;
+  z-index: 2;
+  transition: all 0.75s ease-out;
+}
+
+.circle {
+  width: 13rem;
+  height: 13rem;
+  border-radius: 50%;
+  background: linear-gradient(
+    to bottom,
+    rgba(245, 106, 184, 0.7),
+    rgba(17, 184, 226, 0.7)
+  );
+  position: absolute;
+  z-index: 1;
+}
+
+.info h1 {
+  font-size: 2.5rem;
+  background: -webkit-linear-gradient(#11b8e2, #f56ab8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.75s ease-out;
+}
+
+.info h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding: 1rem 0;
+  transition: all 0.75s ease-out;
+}
+
+.sizes {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+  transition: all 0.75s ease-out;
+}
+
+.sizes button {
+  padding: 0.5rem 2rem;
+  background: none;
+  border: none;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+button.active {
+  background-color: #000000de;
+  color: #f56ab8;
+}
+
+button.inactive {
+  background-color: #00000055;
+  color: #00000055;
+  cursor: not-allowed;
+}
+
+.purchase {
+  margin-top: 2rem;
+}
+
+.purchase button {
+  width: 100%;
+  padding: 0.5rem 0;
+  background-color: #f56ab8;
+  border: solid 1px #f56ab8;
+  cursor: pointer;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.purchase i {
+  margin-right: 1rem;
+}
+
+.purchase button:hover {
+  background-color: #ff1499;
+  border: solid 1px #11b8e2;
+  color: #fff;
+}
